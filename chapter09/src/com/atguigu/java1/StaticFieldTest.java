@@ -12,7 +12,8 @@ package com.atguigu.java1;
  * @create 2020  21:20
  */
 public class StaticFieldTest {
-    private static byte[] arr = new byte[1024 * 1024 * 100];//100MB
+    //100MB
+    private static byte[] arr = new byte[1024 * 1024 * 100];
 
     public static void main(String[] args) {
         System.out.println(StaticFieldTest.arr);
