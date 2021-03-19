@@ -10,8 +10,10 @@ import org.junit.Test;
 public class StringTest5 {
     @Test
     public void test1(){
-        String s1 = "a" + "b" + "c";//编译期优化：等同于"abc"
-        String s2 = "abc"; //"abc"一定是放在字符串常量池中，将此地址赋给s2
+        //编译期优化：等同于"abc"
+        String s1 = "a" + "b" + "c";
+        //"abc"一定是放在字符串常量池中，将此地址赋给s2
+        String s2 = "abc";
         /*
          * 最终.java编译成.class,再执行.class
          * String s1 = "abc";
@@ -27,7 +29,8 @@ public class StringTest5 {
         String s2 = "hadoop";
 
         String s3 = "javaEEhadoop";
-        String s4 = "javaEE" + "hadoop";//编译期优化
+        //编译期优化
+        String s4 = "javaEE" + "hadoop";
         //如果拼接符号的前后出现了变量，则相当于在堆空间中new String()，具体的内容为拼接的结果：javaEEhadoop
         String s5 = s1 + "hadoop";
         String s6 = "javaEE" + s2;

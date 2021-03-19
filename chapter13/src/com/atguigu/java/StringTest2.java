@@ -30,7 +30,8 @@ public class StringTest2 {
 
             long end = System.currentTimeMillis();
 
-            System.out.println("花费的时间为：" + (end - start));//1009:143ms  100009:47ms
+            //1009:143ms  100009:47ms
+            System.out.println("花费的时间为：" + (end - start));
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
