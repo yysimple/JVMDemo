@@ -18,7 +18,9 @@ public class OperandStackTest {
 
     public int getSum() {
         int m = 10;
-        int n = 20;
+        // 这里注意，一个byte可以存的最大数值是127 原因是 有正负数之分
+        // 所以这里会有个符号位 即对应的二进制是 01111111 = 127
+        int n = 128;
         int k = m + n;
         return k;
     }
